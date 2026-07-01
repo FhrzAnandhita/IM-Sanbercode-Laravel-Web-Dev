@@ -34,6 +34,8 @@ $name = "Wahyu";
 greetings($name);
 $name = "nama peserta";
 greetings($name);
+$name = "Fahreza";
+greetings($name);
 
 
 
