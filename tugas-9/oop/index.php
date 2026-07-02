@@ -17,7 +17,7 @@ echo "legs : " . $frog->legs . "<br>";
 echo "cold blooded : " . $frog->cold_blooded . "<br>";
 echo "Jump : " . $frog->jump() . "<br><br>";
 
-$ape = new Ape("kera sakti");
+$ape = new Ape("Kera Sakti");
 
 echo "Name : " . $ape->name . "<br>";
 echo "legs : " . $ape->legs . "<br>";
