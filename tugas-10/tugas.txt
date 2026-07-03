@@ -77,3 +77,8 @@ VALUES
     FROM items
     JOIN categories
     ON items.category_id = categories.id;
+
+5. mengubah data dari database
+    UPDATE items
+    SET price = 2500000
+    WHERE name = 'sumsang b50';
