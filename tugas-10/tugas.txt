@@ -41,3 +41,39 @@ VALUES
 ('Sumsang b50', 'hape keren dari merek sumsang', 4000000, 100, 1),
 ('Uniklooh', 'baju keren dari brand ternama', 500000, 50, 2),
 ('IMHO Watch', 'jam tangan anak yang jujur banget', 2000000, 10, 1);
+
+4. mengambil data dari DATABASE
+    a. mengambil data users
+    SELECT id, name, email
+    FROM users;
+
+    b. mengambil data items
+    SELECT *
+    FROM items
+    WHERE price > 1000000;
+
+    b.a. contoh Watch
+        SELECT *
+        FROM items
+        WHERE name LIKE '%watch%';
+
+    b.b. contoh Uniklo
+        SELECT *
+        FROM items
+        WHERE name LIKE '%uniklo%';
+    b.c. contoh sang
+        SELECT *
+        FROM items
+        WHERE name LIKE '%sang%';
+    
+    c. Menampilkan data items join dengan kategori
+    SELECT
+        items.id,
+        items.name,
+        items.description,
+        items.price,
+        items.stock,
+        categories.name AS category
+    FROM items
+    JOIN categories
+    ON items.category_id = categories.id;
