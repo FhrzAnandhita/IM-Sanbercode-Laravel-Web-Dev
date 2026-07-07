@@ -1,14 +1,8 @@
-<?php
-
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\FormController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\FormController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [DashboardController::class, 'home']);
 
-Route::get('/dashboard', [DashboardController::class, 'home']);
+Route::get('/register', [FormController::class, 'register']);
 
-Route::get('/register', [FormController::class, 'resgister']);
 Route::post('/welcome', [FormController::class, 'welcome']);

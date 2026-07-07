@@ -6,13 +6,14 @@ use Illuminate\Http\Request;
 
 class FormController extends Controller
 {
-    public function resgister()
+    public function register()
     {
-        return view('form.register');
+        return view('register');
     }
+
     public function welcome(Request $request)
     {
-        return view('form.welcome', [
+        return view('welcome', [
             'first_name' => $request->first_name,
             'last_name' => $request->last_name,
         ]);
