@@ -1,5 +1,7 @@
-use App\Http\Controllers\DashboardController;
+<?php
 use App\Http\Controllers\FormController;
+use App\Http\Controllers\DashboardController;
+use Illuminate\Support\Facades\Route;
 
 Route::get('/', [DashboardController::class, 'home']);
 
